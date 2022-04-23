@@ -32,7 +32,7 @@ const MyStartupSrogress = ()=>{
 
     useEffect(() => {
         if(currentState.Delivery && currentState.Discovery && currentState.Foundation) {
-            alert('Compleeeeeeeeeeeeeete')
+            alert('Compleeeeeeeeeeeeeeete')
         }
     }, [currentState])
 
