@@ -1,11 +1,11 @@
 import './App.css';
-import MyStartupProgress from '../src/components/myStartupSrogress/myStartupProgress'
+import MyStartupProgress from '../src/components/myStartupProgress/myStartupProgress'
 
 function App() {
   return (
-    <div className="App">
-      <MyStartupProgress/>
-    </div>
+      <div className="App">
+          <MyStartupProgress/>
+      </div>
   );
 }
 
