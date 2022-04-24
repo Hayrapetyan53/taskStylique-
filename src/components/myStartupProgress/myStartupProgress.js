@@ -55,12 +55,16 @@ const MyStartupSrogress = ()=>{
                                 <div className="item">
                                     <p className="item_number">{item.number}</p>
                                     <h2 className="item_name">{item.name}</h2>
-                                    {currentState.Foundation ? item.name === 'Foundation'  && <p className="item_check">✓</p> : false}
-                                    {currentState.Discovery ? item.name === 'Discovery'  && <p className="item_check">✓</p> : false}
-                                    {currentState.Delivery ? item.name === 'Delivery'  && <p className="item_check">✓</p> : false}
+                                    {currentState.Foundation ? item.name === 'Foundation'  &&
+                                     <p className="item_check">✓</p> : false}
+                                    {currentState.Discovery ? item.name === 'Discovery'  &&
+                                     <p className="item_check">✓</p> : false}
+                                    {currentState.Delivery ? item.name === 'Delivery'  &&
+                                     <p className="item_check">✓</p> : false}
                                 </div>
                                 <Substep currentState={currentState} setCurrentState={setCurrentState} 
-                                handleCheck={handleCheck} isAvailable={isAvailable} data={data} setData={setData} item ={item} />
+                                handleCheck={handleCheck} isAvailable={isAvailable} 
+                                data={data} setData={setData} item ={item} />
                             </div>
                             )
                         }) 
